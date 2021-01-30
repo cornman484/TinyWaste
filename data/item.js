@@ -60,7 +60,7 @@ var ITEM_DATA_INIT = {
 	patato:{
 		name:'土豆',
 		desc:'即使在火星上也能种。',
-		effect:{life:1, hunger:8},
+		effect:{life:10, hunger:100,thirst:100},
 		usable:true,
 		price:8,
 		plant:["patato"],
@@ -476,12 +476,12 @@ var ITEM_DATA_INIT = {
 	crowbar:{
 		name:'撬棍',
 		desc:'也许是最强的武器。',
-		attack:20,
+		attack:9999,
 		durab:30,
-		speed:10,
-		range:2,
+		speed:5,
+		range:5,
 		hitrate:1.1,
-		cost:2,
+		cost:1,
 		price:15,
 		type:'tool'
 	},
@@ -739,7 +739,7 @@ var ITEM_DATA_INIT = {
 		name:'数据晶片',
 		desc:'储存着大量先进技术资料的晶片。',
 		usable:true,
-		effect:{tech:10},
+		effect:{tech:100},
 		price:2000,
 		type:'tool'
 	},
@@ -1007,7 +1007,7 @@ var ITEM_DATA_INIT = {
 	lightSword:{
 		name:'光剑',
 		desc:'原力与你同在。',
-		attack:99,
+		attack:999,
 		durab:300,
 		range:4,
 		speed:8,
@@ -1943,7 +1943,7 @@ var ITEM_DATA_INIT = {
 		name:'夜店装',
 		desc:'让你约遍全场。',
 		price:800,
-		effect:{defence:-10, charm:3},
+		effect:{defence:-10, charm:50},
 		type:'body'
 	},
 	engineer:{
@@ -2424,7 +2424,7 @@ var ITEM_DATA_INIT = {
 		name:'治疗针',
 		desc:'立即恢复生命。',
 		usable:true,
-		effect:{life:25},
+		effect:{life:200},
 		price:150,
 		type:'drug'
 	},
